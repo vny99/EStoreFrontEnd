@@ -1,0 +1,28 @@
+.custom-nav-link {
+    position: relative;
+    color: #333; /* Default text color */
+    text-decoration: none; /* Remove default underline */
+    transition: color 0.3s ease;
+  }
+  
+  .custom-nav-link:hover {
+    color: #7e8083; 
+  }
+  
+  .custom-nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px; 
+    height: 2px; 
+    background-color: #7e8083;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .custom-nav-link:hover::after {
+    transform: scaleX(1); 
+  }
+  

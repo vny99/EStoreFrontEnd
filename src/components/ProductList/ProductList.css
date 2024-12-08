@@ -1,0 +1,135 @@
+.custom-dropdown-button {
+    block-size: auto;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .custom-dropdown-button {
+        block-size: 100%; 
+    }
+}
+
+.card {
+    min-block-size: 400px; 
+}
+
+
+.card-img-top {
+    object-fit: cover;
+    block-size: 200px;
+}
+
+
+@media (max-width: 576px) {
+    .card-body {
+        padding: 15px;
+    }
+}
+
+
+.product-title {
+    font-size: 1.2rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    block-size: 60px; 
+    line-height: 1.5;
+}
+
+.row > .col-lg-3,
+.row > .col-md-4,
+.row > .col-sm-6 {
+    margin-block-end: 2rem; 
+}
+
+
+.product-info li {
+    margin-block-end: 8px;
+}
+
+
+
+.price-status-container {
+    display: flex;
+    justify-content: space-between; /* Space between price and status */
+    align-items: center; /* Align them vertically */
+}
+
+/* Price styling */
+.product-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #28a745; /* Green color for price */
+}
+
+
+.price-status-container {
+    display: flex;
+    flex-direction: row; 
+    gap: 0.5rem; 
+}
+
+
+.product-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #28a745; 
+}
+
+.mt-auto {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #17a2b8; 
+}
+
+.card-body .product-price,
+.card-body .shipping-info,
+.card-body .mt-auto {
+    border-top: 1px solid #ddd;
+    padding-top: 1rem;
+}
+
+
+
+.card-body {
+    padding: 20px;
+}
+
+
+.card-footer {
+    padding: 15px;
+}
+
+.card-img-top {
+    padding: 10px;  
+    object-fit: cover; 
+    border-radius: 8px; 
+}
+
+
+.product-image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.discount-badge {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    background-color: #dc3545; 
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 1rem;
+    z-index: 10; 
+}
+
+
+.discount-badge:hover {
+    background-color: #c82333; 
+}
