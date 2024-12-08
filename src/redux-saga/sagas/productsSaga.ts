@@ -1,9 +1,9 @@
 import { call, Effect, put, takeEvery } from "redux-saga/effects";
 import { Product } from "../../models/Product";
-import { ProductsApiService } from "../../api/ProductsApiService";
 import { FETCH_PRODUCT_BY_ID, FETCH_PRODUCT_BY_ID_FAILED, FETCH_PRODUCT_BY_ID_SUCCESS, FETCH_PRODUCT_BY_SKU, FETCH_PRODUCT_BY_SKU_FAILED, FETCH_PRODUCT_BY_SKU_SUCCESS, FETCH_PRODUCTS, FETCH_PRODUCTS_BY_CATEGORY, FETCH_PRODUCTS_BY_CATEGORY_FAILED, FETCH_PRODUCTS_BY_CATEGORY_SUCCESS, FETCH_PRODUCTS_FAILED, FETCH_PRODUCTS_SUCCESS, FETCH_SORTED_PRODUCTS, FETCH_SORTED_PRODUCTS_FAILED, FETCH_SORTED_PRODUCTS_SUCCESS, LOAD_PRODUCTS_TO_DB, LOAD_PRODUCTS_TO_DB_FAILED, LOAD_PRODUCTS_TO_DB_SUCCESS } from "../actions/ActionTypes";
 import { AxiosError } from "axios";
 import APIResponse from "../../models/APIResponse";
+import { ProductsApiService } from "../../api/ProductsApiService";
 
 function* getAllProductsSaga(): Generator<Effect, void, APIResponse<Product[]>>{
     try {

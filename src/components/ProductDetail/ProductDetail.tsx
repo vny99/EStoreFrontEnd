@@ -29,7 +29,7 @@ const ProductDetail = () => {
         setProduct(productFromStore);
         setLoading(loadingFromStore);
         setError(errorFromStore);
-        console.log(productFromStore);
+        console.log(error, loading, product);
     }, [productFromStore, loadingFromStore, errorFromStore]);
 
     const Loading = () => {
@@ -195,10 +195,10 @@ const ProductDetail = () => {
 
     return (
         <div>
-            {loading ? (
-                <Loading />
-            ) : error ? (
+            {error != '' ? (
                 <Error />
+            ) : loading ? (
+                <Loading />
             ) : (
                 <ShowProduct />
             )}
